@@ -1,5 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
+import Header from './Containers/Header'
+import { GlobalStyle } from './GlobalStyles'
+
 function App() {
-  return <h1>Pojeto</h1>
+  return (
+    <>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Header />
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App
