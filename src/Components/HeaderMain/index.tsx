@@ -2,10 +2,9 @@ import MenuHamburguer from '../MenuHamburguer'
 
 import logo from '../../Assets/images/logo-desktop.svg'
 
-import { CiSearch } from 'react-icons/ci'
+import { Search } from 'lucide-react'
 
 import * as S from './styles'
-import React from 'react'
 
 const HeaderMain = () => (
   <S.MainHeader>
@@ -17,8 +16,8 @@ const HeaderMain = () => (
         id="downshift"
         placeholder="Pesquise produtos ou marcas"
       />
-      <button>
-        <CiSearch size={16} />
+      <button aria-label="Buscar produtos">
+        <Search />
       </button>
     </S.Search>
   </S.MainHeader>

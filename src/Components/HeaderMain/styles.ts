@@ -33,8 +33,12 @@ export const Search = styled.div`
   }
 
   button {
+    background-color: #e8efec;
     height: 48px;
     width: 48px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `
