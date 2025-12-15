@@ -2,9 +2,16 @@ import MenuHamburguer from '../MenuHamburguer'
 
 import logo from '../../Assets/images/logo-desktop.svg'
 
-import { Search } from 'lucide-react'
+import {
+  CircleUser,
+  ClipboardList,
+  Heart,
+  Search,
+  ShoppingCart
+} from 'lucide-react'
 
 import * as S from './styles'
+import { Link } from 'react-router-dom'
 
 const HeaderMain = () => (
   <S.MainHeader>
@@ -20,6 +27,23 @@ const HeaderMain = () => (
         <Search />
       </button>
     </S.Search>
+    <Link className="link" to={'/'}>
+      <ClipboardList className="icon" />
+      <span>Minhas Listas</span>
+    </Link>
+    <Link className="link" to={'/'}>
+      <Heart className="icon" />
+      <span>Favoritos</span>
+    </Link>
+    <Link className="link" to={'/'}>
+      <CircleUser className="icon" />
+      <span>Entrar</span>
+    </Link>
+    <div className="cart">
+      <span>
+        <ShoppingCart />
+      </span>
+    </div>
   </S.MainHeader>
 )
 
