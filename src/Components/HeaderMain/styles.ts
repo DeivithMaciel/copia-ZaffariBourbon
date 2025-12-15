@@ -77,3 +77,44 @@ export const Search = styled.div`
     align-items: center;
   }
 `
+
+export const Menu = styled.div`
+  background-color: ${colors.lightGreen};
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 72px;
+
+    li {
+      list-style: none;
+      padding: 4px;
+
+      a {
+        position: relative;
+        text-decoration: none;
+        color: ${colors.white};
+        overflow: hidden;
+        z-index: 0;
+        padding: 4px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-color: ${colors.green};
+          border-radius: inherit;
+
+          transform: scale(0);
+          transform-origin: center;
+          transition: transform 0.3s ease;
+          z-index: -1;
+        }
+
+        &:hover::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+`
