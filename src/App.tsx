@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import Header from './Containers/Header'
 import { GlobalStyle } from './GlobalStyles'
+import HeroCarousel from './Containers/HeroCarousel'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <GlobalStyle />
         <Header />
+        <HeroCarousel />
       </BrowserRouter>
     </>
   )
